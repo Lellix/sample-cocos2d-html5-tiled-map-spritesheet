@@ -29,7 +29,44 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-##  mapteste game with Cocos2d-html5
-* **source**: [https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste](https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste)
+# Cocos2d HTML5 License
+* Name: Cocos2d HTML5
+* Source: https://github.com/cocos2d/cocos2d-html5
+* License: https://github.com/cocos2d/cocos2d-html5/blob/Cocos2d-html5-v2.2.3/licenses/LICENSE_cocos2d-html5.txt
 
-* **license**: [https://github.com/cocos2d/cocos2d-html5/blob/develop/licenses/LICENSE_cocos2d-html5.txt](https://github.com/cocos2d/cocos2d-html5/blob/develop/licenses/LICENSE_cocos2d-html5.txt)
+# Cocos2d-x License
+* Name: Cocos2d-x
+* Source: https://github.com/cocos2d/cocos2d-x
+* License: https://github.com/cocos2d/cocos2d-html5/blob/Cocos2d-html5-v2.2.3/licenses/LICENSE_cocos2d-x.txt
+
+# ZLib.js License
+* Name: ZLib.js
+* Source: https://github.com/imaya/zlib.js
+* License: 
+
+> The MIT License
+> 
+> Copyright (c) 2012 imaya
+> 
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+> 
+> The above copyright notice and this permission notice shall be included in
+> all copies or substantial portions of the Software.
+> 
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+> THE SOFTWARE.
+
+# ZLib License
+* Name: Zlib
+* Source: http://www.zlib.net/
+* License: http://opensource.org/licenses/zlib-license.php
