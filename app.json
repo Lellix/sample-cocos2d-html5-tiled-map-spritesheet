@@ -1,0 +1,16 @@
+{
+
+	"reponame": "cocos2d-html5-2.2-tiled-map-spritesheet-sample",
+	"title": "Cocos2d-html5 2.2 tiled map spritesheet sample",
+	"tooltip": "A sample of Cocos2d-html5 2.2 tiled map spritesheet",
+	"description": "A game sample built using Cocos2d-html5, HTML5, JavaScript and CSS3 that teaches developer to create spritesheet.",
+	"articleUrl": "",
+	"keywords": ["Game"],
+	"visible": "true",
+	"highlights": ["Tiled Map", "Cocos2d", "Spritesheet"],
+	"appname": "demo.Cocos2dHtml52.2TiledMapSpritesheetSample",
+	"abbr": "TiledMap sprite",
+	"relname": "4.0.0",
+	"apppreview": "true"
+
+}

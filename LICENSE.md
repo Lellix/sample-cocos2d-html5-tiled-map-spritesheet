@@ -28,3 +28,8 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
 LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+##  mapteste game with Cocos2d-html5
+* **source**: [https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste](https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste)
+
+* **license**: [https://github.com/cocos2d/cocos2d-html5/blob/develop/licenses/LICENSE_cocos2d-html5.txt](https://github.com/cocos2d/cocos2d-html5/blob/develop/licenses/LICENSE_cocos2d-html5.txt)

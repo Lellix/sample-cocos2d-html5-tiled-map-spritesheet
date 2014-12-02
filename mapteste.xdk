@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "blankproject",
       "projectGuid": "37c63461-8fff-4b43-8c62-03af5ad8214a",
-      "lastModifiedDate": 1416213004640,
+      "lastModifiedDate": 1416669434162,
       "creationDate": 1416213004594
     },
     "sourceDirectory": "www",
@@ -55,7 +55,8 @@
         "preferences_": {
           "android-minSdkVersion": "10",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Orientation": "landscape"
         },
         "isActive_": true,
         "appName_": "mapteste",
@@ -80,7 +81,8 @@
         "preferences_": {
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Orientation": "landscape"
         },
         "isActive_": true,
         "appName_": "mapteste",
@@ -104,7 +106,8 @@
         "name_": "iOS",
         "preferences_": {
           "ios-target": "5",
-          "ios-configuration": "adhoc"
+          "ios-configuration": "adhoc",
+          "Orientation": "landscape"
         },
         "isActive_": true,
         "appName_": "mapteste",
@@ -126,7 +129,8 @@
         "name_": "Windows8",
         "preferences_": {
           "windows-publisher-display-name": "",
-          "windows-publisher-id": ""
+          "windows-publisher-id": "",
+          "Orientation": "landscape"
         },
         "isActive_": true,
         "appName_": "mapteste",
@@ -160,6 +164,14 @@
         "crosswalkVersion_": "stable",
         "appVersion_": "1.0.0.0"
       }
-    }
+    },
+    "gameAssetDirectory": "assets",
+    "gameMetadata": {
+      "gameEngineName": "cocos2d",
+      "gameEngineVersion": "2.2.3"
+    },
+    "projectTags": [
+      "XDK-game-app"
+    ]
   }
 }
