@@ -29,11 +29,32 @@ var GameLayer = cc.Layer.extend({
      // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
      // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
      // var s = parentCocosLayer._tilemap.getContentSize();
+        // cc.LoaderScene.preload([
+        //     'file://tiles/map.tmx',
+        //     'file://tiles/tiles.png',
+        // ]);
+      
+        // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/map.tmx');
+        // var TAG_TILE_MAP = 1;
+        // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
+        // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
+        // var s = parentCocosLayer._tilemap.getContentSize();
         this.map = cc.TMXTiledMap.create("assets/tiles/map.tmx");
         // cc.LoaderScene.preload([
         // 'file://tiles/iso-test.tmx',
         // 'file://tiles/iso-test.png',
         // ]);
+
+        // cc.LoaderScene.preload([
+        //     'file://tiles/iso-test.tmx',
+        //     'file://tiles/iso-test.png',
+        //     ]);
+          
+        // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/iso-test.tmx');
+        // var TAG_TILE_MAP = 1;
+        // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
+        // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
+        // var s = parentCocosLayer._tilemap.getContentSize();
       
         // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/iso-test.tmx');
         // var TAG_TILE_MAP = 1;
