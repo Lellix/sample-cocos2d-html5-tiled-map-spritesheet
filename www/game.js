@@ -19,13 +19,39 @@ var GameLayer = cc.Layer.extend({
         this._super();
         this.setMouseEnabled(true);
         this.setTouchEnabled(true);
-    
+        /**
+        //
+        // Intel XDK had generated this code snippet for you
+        //
+        // To make it work in your project,
+        //   follow the instructions in comments below
+        //
+
+        // Make sure you had preloaded the assets
+        //   This preload function call is usually done when loading the game
+        //   TODO: merge the proload array with existing one
+        cc.LoaderScene.preload([
+            'asset/tiles/map.tmx',
+            'asset/tiles/tiles.png',
+            ]);
+        // End of preloading assets
+
+        // This function demonstrates how to load tiled map
+        function demoTiledMapFontUsage (parentCocosLayer) {
+            var tiledMap = cc.TMXTiledMap.create("asset/tiles/map.tmx");
+            var TAG_TILED_MAP = 1;
+            parentCocosLayer.addChild(tiledMap, 0, TAG_TILED_MAP);
+
+            // TODO: tiled map is loaded, write your own code below
+
+        }
+        */
         this.map = cc.TMXTiledMap.create('asset/tiles/map.tmx');
         
         this.addChild(this.map, 0);
         
         this.layer = this.map.getLayer('Camada de Tiles 1');
-        this.sprite = new sprite();//cc.Sprite.create('asset/tiles/sprite1.png')
+        this.sprite = new sprite();
         var tile0 = this.layer.getTileAt(cc.p(0,0));
         this.sprite.setAnchorPoint(cc.p(0.5,0.5));
         var x = tile0.getPosition().x + 30;
@@ -53,7 +79,7 @@ var GameLayer = cc.Layer.extend({
                 }
             }
         }
-        cc.log(this.tilespoint);
+        // cc.log(this.tilespoint);
         return this;
     },
     centrarPersonagem:function(pers){
@@ -102,8 +128,10 @@ var GameLayer = cc.Layer.extend({
                 this.actions.setPosition(this.sprite.getPosition().x + 24, this.sprite.getPosition().y + 56);
             }
         }else{
-            this.actions.setPosition(-90000, -90000);
-            if(this.tatics !==null){
+            if (this.actions)
+                this.actions.setPosition(-90000, -90000);
+            
+            if(this.tatics){
                 this.tatics.setPosition(-90000,-90000);
             }
         }
