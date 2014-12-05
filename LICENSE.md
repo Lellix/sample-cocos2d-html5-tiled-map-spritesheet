@@ -29,6 +29,11 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Map Test License
+* Name: Map Test
+* Source: https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste
+* License: https://github.com/jucimarjr/html5games/blob/master/LICENSE
+
 # Cocos2d HTML5 License
 * Name: Cocos2d HTML5
 * Source: https://github.com/cocos2d/cocos2d-html5

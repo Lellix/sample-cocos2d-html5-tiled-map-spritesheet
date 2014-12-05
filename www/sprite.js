@@ -3,29 +3,20 @@ var sprite = cc.Sprite.extend({
     movable: false,
     ctor: function() {
         this._super();
-        this.initWithFile("assets/tiles/sprite1.png");
+        this.initWithFile('asset/tiles/sprite1.png');
         return this;
     },
     openOptions: function() {
-        //cc.log("open Options");
+        cc.log('open Options');
     },
     crouch: function() {
-        cc.log("crouch");
-        /*
-                var gamelayer = this.getParent();
-                gamelayer.tatics.setPosition(-900000,-900000);*/
+        cc.log('crouch');
     },
     prone: function() {
-        cc.log("prone");
-        /*
-                var gamelayer = this.getParent();
-                gamelayer.tatics.setPosition(-900000,-900000);*/
+        cc.log('prone');
     },
     cover: function() {
-        cc.log("cover");
-        /*
-                var gamelayer = this.getParent();
-                gamelayer.tatics.setPosition(-900000,-900000);*/
+        cc.log('cover');
     },
     move: function(point) {
         var p = cc.pAdd(point, cc.p(0, 56));

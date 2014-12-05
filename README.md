@@ -1,83 +1,133 @@
-# Blank Intel XDK and Apache Cordova Project
+# Cocos2d-HTML5 2.2 Tiled Map & Armature Animation Sample
 
-See [LICENSE.md][] for license terms and conditions.
+### Desclaimer
+See [LICENSE.md]() for license terms and conditions.
 
-Use this project as a starting point for an Intel XDK or Apache Cordova
-hybrid mobile app. One key file (`init-dev.js`) contains the
-initialization code needed to handle XDK device ready, Cordova device
-ready or browser document ready init events in a way that allows you to
-run your app in any of these environments. This init code works:
+This sample is used to show the usage of Tiled Map & Armature Animation in Cocos2d-HTML5 2.2 engine with 
+Intel(R) XDK. The assets and code are created from [SeasonsRun](https://github.com/jucimarjr/html5games/tree/master/cocos2d/SeasonsRun) by Jucimar Junior.
 
--   with the the Intel XDK Emulate tab
+### Application Files
+* asset/
+* lib/
+* src/
+  * auxFunctions.js
+  * Credits.js
+  * game.js
+  * HighScores.js
+  * Menu.js
+  * player.js
+  * resource.js
+  * serverFunctions.js
+  * SplashGame.js
+  * SplashLudus.js
+* cocos2d.js
+* index.html
+* main.js
+* Player.js
+* server.js
 
--   in the XDK App Preview application (Test tab)
+### Overview
 
--   in the App Preview Crosswalk container (Debug tab)
+`www/cocos2d.js` bootstraps the Cocos2d engine, and `www/main.js` is the entrance of the game which loads the resources and switch to the start scene.
 
--   with the weinre debug script (Test tab)
+### Game Asset Manager
+Game Asset Manager (GAM) is a tool for previewing and creating code snippets for various assets commonly used in game projects. By creating or importing a game project in XDK, you will find GAM panel on the left side of "DEVELOP" tab.
+With Game Asset Manager, you can generate code snippet to preload and use tiled map and armature animations in Cocos2d-HTML5.
 
--   in an app built using the Intel XDK legacy container (aka AppMobi
-    container)
+### Preload Tiled Map and Armature Animation
+In Cocos2d, all resources should be loaded by `cc.LoaderScene.preload(resources, callback)` or `cc.Loader.preload(resources, callback)` if you don't need to create a loader scene. Tiled Map file, Armature Animation file and corresponding spritesheets and images should be loaded before using them.
 
--   in an app built using the standard Apache Cordova container (aka
-    Cordova CLI)
+In this sample, all resources are listed in `src/resource.js` and loaded in `www/main.js`. See these files for detailed usage of resource loading.
 
-When `init-dev.js` completes execution it issues a custom "`app.Ready`"
-event. Use this event to start your application, rather than waiting on
-"device ready" or "document ready" or "window load" or similar events.
-You should not have to modify anything in `init-dev.js` to use this
-code. Also, `init-dev.js` has been written so that it is not dependent
-on any external libraries or specific webviews. It has been tested with
-the following webviews and browsers:
+### Usage of Tiled Map
+The TMX (Tile Map XML) map format used by Tiled is a flexible way to describe a tile based map. It can describe maps with any tile size, any amount of layers, any number of tile sets and it allows custom properties to be set on most elements. Beside tile layers, it can also contain groups of objects that can be placed freely. For detailed format specification, please refer to [official documentation](https://github.com/bjorn/tiled/wiki/TMX-Map-Format). And [Tiled Map Editor](http://www.mapeditor.org/) is a common tool to generate TMX file.
 
--   Android 2.3, 4.0-4.3 and 4.4
+To add tiled map in Cocos2d, you can use `cc.TMXTiledMap.create(tmxFile)` to create a [`cc.TMXTiledMap`](http://www.cocos2d-x.org/reference/html5-js/V2.2.3/symbols/cc.TMXTiledMap.html). And then add it to a layer. For example to add `www/asset/Maps/map0.tmx`, Game Asset Manager will generate following code:
 
--   iOS 6 and 7
+```
+//
+// Intel XDK had generated this code snippet for you
+//
+// To make it work in your project,
+//   follow the instructions in comments below
+//
 
--   Windows 8 Phone
+// Make sure you had preloaded the assets
+//   This preload function call is usually done when loading the game
+//   TODO: merge the proload array with existing one
+cc.LoaderScene.preload([
+    'asset/Maps/map0.tmx',
+    'asset/Maps/tilesSummer.png',
+    ]);
+// End of preloading assets
 
--   Windows 8
+// This function demonstrates how to load tiled map
+function demoTiledMapFontUsage (parentCocosLayer) {
+    var tiledMap = cc.TMXTiledMap.create("asset/Maps/map0.tmx");
+    var TAG_TILED_MAP = 1;
+    parentCocosLayer.addChild(tiledMap, 0, TAG_TILED_MAP);
 
--   Crosswalk
+    // TODO: tiled map is loaded, write your own code below
 
--   Chrome Desktop Browser
+}
 
--   Internet Explorer 10 and 11
+```
 
-This blank project works well for converting an existing web app into a
-hybrid app. One of the biggest issues encountered when porting a web app
-to a hybrid app is resolving the init sequence of the web app with the
-init sequence required of a hybrid HTML5 app. This gets especially
-difficult when large third-party libraries are part of the app. Due to
-the additional burden of initializing the underlying native code layer,
-developers sometimes have trouble getting their code that runs in a
-desktop browser to initialize in an HTML5 hybrid webview. Frequently
-this is due to the significant difference in resources between the
-desktop browser and the mobile webview (e.g., less memory, lower
-performance and a reduced feature set).
+Just paste them into your project and make changes according to your needs. See `www/src/game.js` for detailed usage of Tiled Map.
 
-You can combine `init-app.js` and `app.js` into a single file (e.g.,
-just `app.js`) and things will work just fine, as long as you start
-things up using the custom "`app.Ready`" event described above. Also,
-there is nothing particularly important about the `app.css` file, it
-contains a few global CSS definitions that are commonly applied to older
-Android devices, but certainly is not the "end all" for configuring the
-CSS in your hybrid HTML5 webview application.
+### Usage of Armature Animation
+Armature Animation is created by [CocoStudio](http://www.cocos2d-x.org/products#cocos-studio) in JSON format. Armature animation is usually used for presenting moving objects, like a running person etc.
 
-There are many comments in the files in this project. Please read those
-comments for details and further documentation. In particular, see the
-comments in the `index.html` file for recommendations on how to load
-your third-party libraries relative to your application code and the
-special hybrid libraries (`intelxdk.js`, `cordova.js` and `xhr.js`).
+To enable CocoStudio Armature support, make sure to set "loadExtension" to true in the configuration, for example `www/cocos2d.js` in this sample.
 
-There are a large number of `console.log()` messages contained within
-`init-dev.js`. They can be used to debug initialization problems and
-understand how the file works. It is highly recommended that you leave
-those `console.log()` messages in your app, they will not unduly slow
-down or burden your application.
+Before rendering an armature animation, use `ccs.ArmatureDataManager.getInstance().addArmatureFileInfo(armature_json, spritesheet_plist, spritesheet_png)` to add the definition. And then use `ccs.Armature.create(armatureName)` to create an armature node. To render specific animation defined in the armature, use `armature.getAnimation().play(animationName)`.
 
-BTW: the "`dev`” prefix refers to "device" in this context, not
-"develop," because it grew out of a desire to build a more reliable and
-flexible "device ready" detector.
+For example, to render a running person defined in `asset/RunnerFinal.ExportJson` in this sample, Game Asset Manager will help to generate following code:
 
-  [LICENSE.md]: LICENSE.md
+```
+//
+// Intel XDK had generated this code snippet for you
+//
+// To make it work in your project,
+//   follow the instructions in comments below
+//
+
+// Make sure you had preloaded the assets
+//   This preload function call is usually done when loading the game
+//   TODO: merge the proload array with existing one
+cc.LoaderScene.preload([
+    'asset/RunnerFinal/RunnerFinal.ExportJson',
+    'asset/RunnerFinal/RunnerFinal0.plist',
+    'asset/RunnerFinal/RunnerFinal0.png',
+    ]);
+// End of preloading assets
+
+// This function demonstrates how to load an armature animation
+function play_armature_movie_run (parentCocosLayer, offsetX, offsetY) {
+    var armatureDataManager = ccs.ArmatureDataManager.getInstance();
+    armatureDataManager.addArmatureFileInfo(
+        'asset/RunnerFinal/RunnerFinal0.png',
+        'asset/RunnerFinal/RunnerFinal0.plist',
+        'asset/RunnerFinal/RunnerFinal.ExportJson');
+    var armature = ccs.Armature.create('RunnerFinal');
+    armature.getAnimation().play('run');
+
+    // TODO: change speed of the animation
+    armature.getAnimation().setSpeedScale(1);
+    // TODO: change size of the animation
+    armature.setScale(1);
+    // TODO: change position of the animation
+    armature.setPosition(cc.VisibleRect.center().x - offsetX,
+        cc.VisibleRect.center().y - offsetY);
+
+    // Add to parent layer to make visible
+    parentCocosLayer.addChild(armature);
+}
+
+```
+
+Just copy and paste the code snippet into your project and make changes according to your needs. See `www/src/game.js` and `www/src/player.js` for detailed usage.
+
+# Intel(R) XDK
+This sample is part of the Intel(R) XDK. 
+Download the Intel XDK at http://software.intel.com/en-us/html5.

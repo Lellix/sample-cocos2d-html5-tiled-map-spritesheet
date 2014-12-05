@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "blankproject",
       "projectGuid": "37c63461-8fff-4b43-8c62-03af5ad8214a",
-      "lastModifiedDate": 1416669434162,
+      "lastModifiedDate": 1417769838899,
       "creationDate": 1416213004594
     },
     "sourceDirectory": "www",
@@ -56,11 +56,12 @@
           "android-minSdkVersion": "10",
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto",
-          "Orientation": "landscape"
+          "Orientation": "landscape",
+          "Fullscreen": true
         },
         "isActive_": true,
-        "appName_": "mapteste",
-        "appID_": "xdk.intel.blank.project",
+        "appName_": "Map Test",
+        "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -70,7 +71,7 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser.",
+        "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
         "appAuthor_": "",
         "appVersionCode_": "1"
       },
@@ -82,11 +83,12 @@
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto",
-          "Orientation": "landscape"
+          "Orientation": "landscape",
+          "Fullscreen": true
         },
         "isActive_": true,
-        "appName_": "mapteste",
-        "appID_": "xdk.intel.blank.project",
+        "appName_": "Map Test",
+        "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -96,7 +98,7 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser.",
+        "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
         "appAuthor_": "",
         "appVersionCode_": "1"
       },
@@ -107,11 +109,12 @@
         "preferences_": {
           "ios-target": "5",
           "ios-configuration": "adhoc",
-          "Orientation": "landscape"
+          "Orientation": "landscape",
+          "Fullscreen": true
         },
         "isActive_": true,
-        "appName_": "mapteste",
-        "appID_": "xdk.intel.blank.project",
+        "appName_": "Map Test",
+        "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -121,7 +124,7 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
-        "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser."
+        "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map."
       },
       "Windows8": {
         "platform_": "windows8",
@@ -130,11 +133,12 @@
         "preferences_": {
           "windows-publisher-display-name": "",
           "windows-publisher-id": "",
-          "Orientation": "landscape"
+          "Orientation": "landscape",
+          "Fullscreen": true
         },
         "isActive_": true,
-        "appName_": "mapteste",
-        "appID_": "xdk.intel.blank.project",
+        "appName_": "Map Test",
+        "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -144,7 +148,7 @@
         "cordovaCLIVersion_": "3.5",
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.0.1",
-        "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser."
+        "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map."
       },
       "WindowsPhone8": {
         "platform_": "wp8",
@@ -165,7 +169,7 @@
         "appVersion_": "1.0.0.0"
       }
     },
-    "gameAssetDirectory": "assets",
+    "gameAssetDirectory": "asset",
     "gameMetadata": {
       "gameEngineName": "cocos2d",
       "gameEngineVersion": "2.2.3"

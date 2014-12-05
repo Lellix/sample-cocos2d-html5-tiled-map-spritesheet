@@ -19,53 +19,13 @@ var GameLayer = cc.Layer.extend({
         this._super();
         this.setMouseEnabled(true);
         this.setTouchEnabled(true);
-     // cc.LoaderScene.preload([
-     //  'file://tiles/map.tmx',
-     // 'file://tiles/tiles.png',
-     // ]);
-      
-     // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/map.tmx');
-     // var TAG_TILE_MAP = 1;
-     // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
-     // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
-     // var s = parentCocosLayer._tilemap.getContentSize();
-        // cc.LoaderScene.preload([
-        //     'file://tiles/map.tmx',
-        //     'file://tiles/tiles.png',
-        // ]);
-      
-        // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/map.tmx');
-        // var TAG_TILE_MAP = 1;
-        // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
-        // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
-        // var s = parentCocosLayer._tilemap.getContentSize();
-        this.map = cc.TMXTiledMap.create("assets/tiles/map.tmx");
-        // cc.LoaderScene.preload([
-        // 'file://tiles/iso-test.tmx',
-        // 'file://tiles/iso-test.png',
-        // ]);
-
-        // cc.LoaderScene.preload([
-        //     'file://tiles/iso-test.tmx',
-        //     'file://tiles/iso-test.png',
-        //     ]);
-          
-        // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/iso-test.tmx');
-        // var TAG_TILE_MAP = 1;
-        // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
-        // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
-        // var s = parentCocosLayer._tilemap.getContentSize();
-      
-        // parentCocosLayer._tilemap = cc.TMXTiledMap.create('file://tiles/iso-test.tmx');
-        // var TAG_TILE_MAP = 1;
-        // parentCocosLayer.addChild( parentCocosLayer._tilemap, 0, TAG_TILE_MAP);
-        // parentCocosLayer._tilemap.runAction(cc.ScaleBy.create(2, 0.5));
-        // var s = parentCocosLayer._tilemap.getContentSize();
-        //var map = cc.TMXTiledMap.create("assets/tiles/iso-test.tmx");
+    
+        this.map = cc.TMXTiledMap.create('asset/tiles/map.tmx');
+        
         this.addChild(this.map, 0);
         
-        this.layer = this.map.getLayer("Camada de Tiles 1");
-        this.sprite = new sprite();//cc.Sprite.create("assets/tiles/sprite1.png")
+        this.layer = this.map.getLayer('Camada de Tiles 1');
+        this.sprite = new sprite();//cc.Sprite.create('asset/tiles/sprite1.png')
         var tile0 = this.layer.getTileAt(cc.p(0,0));
         this.sprite.setAnchorPoint(cc.p(0.5,0.5));
         var x = tile0.getPosition().x + 30;
@@ -75,11 +35,6 @@ var GameLayer = cc.Layer.extend({
         cc.registerTargetedDelegate(0, true, this.sprite);
         this.setTag(1);
         this.centrarPersonagem(this.sprite);
-        //for(var i = 0;i < 50;i++){
-            //cc.log(this.layer.getTiles());
-        //}
-        //cc.log(this.sprite.getPosition());
-        //cc.log(this.map.getTileSize());
         var mapWidth = this.map.getMapSize().width;
         var mapHeight = this.map.getMapSize().height;
         var tileWidth = this.map.getTileSize().width;
@@ -116,8 +71,8 @@ var GameLayer = cc.Layer.extend({
         if(this.sprite.movable){
             var prox = this.tilespoint[0];
             //cc.log(prox);
-            for(var i=1;i<this.tilespoint.length;i++){
-                var dist = cc.pDistanceSQ(prox, this.tilespoint[i])
+            for(i=1;i<this.tilespoint.length;i++){
+                var dist = cc.pDistanceSQ(prox, this.tilespoint[i]);
                 if(dist < prox){
                     prox = dist;
                 }
@@ -127,11 +82,11 @@ var GameLayer = cc.Layer.extend({
         }
         var rect = cc.rect(this.sprite.getPosition().x - 24, this.sprite.getPosition().y - 56,48,113);
         if(cc.rectContainsPoint(rect, getPoint)){
-            if(this.actions == null){
-                var spriteAttack = cc.Sprite.create("assets/tiles/btnAttack.png");
-                var spriteMove = cc.Sprite.create("assets/tiles/btnMove.png");
-                var spriteTatics = cc.Sprite.create("assets/tiles/btnTatics.png");
-                var spriteItens = cc.Sprite.create("assets/tiles/btnItens.png");
+            if(!this.actions){
+                var spriteAttack = cc.Sprite.create('asset/tiles/btnAttack.png');
+                var spriteMove = cc.Sprite.create('asset/tiles/btnMove.png');
+                var spriteTatics = cc.Sprite.create('asset/tiles/btnTatics.png');
+                var spriteItens = cc.Sprite.create('asset/tiles/btnItens.png');
                 var btnAttack = cc.MenuItemSprite.create(spriteAttack,null,null, 'Attack',this);
                 var btnMove = cc.MenuItemSprite.create(spriteMove, null,null, 'moveSprite', this);
                 var btnTatics = cc.MenuItemSprite.create(spriteTatics,null,null, 'openTatics',this);
@@ -157,10 +112,10 @@ var GameLayer = cc.Layer.extend({
         this.sprite.movable = true;
     },
     openTatics:function(){
-        if(    this.tatics == null){
-            var spriteCrouch = cc.Sprite.create("assets/tiles/btnCrouch.png");
-            var spriteProne = cc.Sprite.create("assets/tiles/btnProne.png");
-            var spriteCover = cc.Sprite.create("assets/tiles/btnCover.png");
+        if(!this.tatics){
+            var spriteCrouch = cc.Sprite.create('asset/tiles/btnCrouch.png');
+            var spriteProne = cc.Sprite.create('asset/tiles/btnProne.png');
+            var spriteCover = cc.Sprite.create('asset/tiles/btnCover.png');
             var btnCrouch = cc.MenuItemSprite.create(spriteCrouch,null,null, this.sprite.crouch,null);
             var btnProne = cc.MenuItemSprite.create(spriteProne, null,null, this.sprite.prone, null);
             var btnCover = cc.MenuItemSprite.create(spriteCover,null,null, this.sprite.cover,null);
