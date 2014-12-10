@@ -1,4 +1,4 @@
-# Cocos2d-HTML5 2.2 Tiled Map & Armature Animation Sample
+# Cocos2d-HTML5 2.2 Tiled Map Sample
 
 ### Desclaimer
 See [LICENSE.md]() for license terms and conditions.
@@ -35,15 +35,15 @@ To add tiled map in Cocos2d, you can use `cc.TMXTiledMap.create(tmxFile)` to cre
 
 ```
 //
-// Intel XDK had generated this code snippet for you
+// The Intel XDK generated this code snippet for you
 //
-// To make it work in your project,
-//   follow the instructions in comments below
+// To use it in your project, follow the
+//   instructions in comments below
 //
 
 // Make sure you had preloaded the assets
-//   This preload function call is usually done when loading the game
-//   TODO: merge the proload array with existing one
+//   Call this preload function when loading the game
+//   TODO: merge the preload array with your existing one
 cc.LoaderScene.preload([
     'asset/tiles/map.tmx',
     'asset/tiles/tiles.png',

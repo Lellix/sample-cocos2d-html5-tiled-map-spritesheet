@@ -21,15 +21,15 @@ var GameLayer = cc.Layer.extend({
         this.setTouchEnabled(true);
         /**
         //
-        // Intel XDK had generated this code snippet for you
+        // The Intel XDK generated this code snippet for you
         //
-        // To make it work in your project,
-        //   follow the instructions in comments below
+        // To use it in your project, follow the
+        //   instructions in comments below
         //
 
         // Make sure you had preloaded the assets
-        //   This preload function call is usually done when loading the game
-        //   TODO: merge the proload array with existing one
+        //   Call this preload function when loading the game
+        //   TODO: merge the preload array with your existing one
         cc.LoaderScene.preload([
             'asset/tiles/map.tmx',
             'asset/tiles/tiles.png',
