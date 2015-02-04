@@ -12,6 +12,7 @@
     "appname": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
     "abbr": "TiledMap sprite",
     "relname": "4.0.0",
-    "apppreview": "true"
+    "apppreview": "true",
+  	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 
 }
