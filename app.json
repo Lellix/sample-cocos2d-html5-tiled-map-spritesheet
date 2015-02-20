@@ -1,18 +1,16 @@
 {
-
-    "reponame": "cocos2d-html5-2.2-tiled-map-sample",
-    "title": "Cocos2d-html5 2.2 tiled map sample",
-    "tooltip": "A sample of Cocos2d-html5 2.2 tiled map",
-    "description": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
-    "articleUrl": "",
-    "keywords": ["Game", "Cocos2d"],
-    "visible": "true",
-    "type": "",
-    "highlights": ["Tiled Map", "Cocos2d", "Game"],
-    "appname": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-    "abbr": "TiledMap sprite",
-    "relname": "4.0.0",
-    "apppreview": "true",
-  	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
-
+"repoName": "cocos2d-html5-2.2-tiled-map-sample",
+"title": "Cocos2d-html5 2.2 tiled map sample",
+"tooltip": "A sample of Cocos2d-html5 2.2 tiled map",
+"description": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
+"articleUrl": "",
+"keywords": ["Game", "Cocos2d"],
+"visible": "true",
+"type": "",
+"highlights": ["Tiled Map", "Cocos2d", "Game"],
+"appname": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
+"abbr": "TiledMap sprite",
+"relname": "4.0.0",
+"apppreview": "true",
+"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
