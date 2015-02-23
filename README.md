@@ -35,7 +35,7 @@ entrance of the game which loads the resources and switch to the start scene.
 
 Game Asset Manager (GAM) is a tool for previewing and creating code snippets for
 various assets commonly used in game projects. By creating or importing a game
-project in XDK, you will find GAM panel on the left side of "DEVELOP" tab.
+project in Intel XDK, you will find GAM panel on the left side of "DEVELOP" tab.
 
 With Game Asset Manager, you can generate code snippet to preload and use tiled
 map in Cocos2d-HTML5.
