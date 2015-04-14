@@ -1,5 +1,5 @@
 {
-    "reponame": "cocos2d-html5-2.2-tiled-map-sample",
+    "repoName": "sample-cocos2d-html5-2.2-tiled-map",
     "title": "Cocos2d-html5 2.2 tiled map sample",
     "tooltip": "A sample of Cocos2d-html5 2.2 tiled map",
     "description": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
