@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-# Intel® HTML5 Samples License Terms and Conditions
-
-Copyright © 2012-2014, Intel Corporation. All rights reserved.
-=======
 Intel® XDK Samples License Terms and Conditions
 ===============================================
 
 Copyright © 2012-2015, Intel Corporation. All rights reserved.
 
 This is a “BSD-3” license. <http://www.tldrlegal.com/l/bsd3>
->>>>>>> 3b0842727ad891a53b7ee7360b72caa850f221a5
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -38,32 +32,6 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-<<<<<<< HEAD
-# Map Test License
-* Name: Map Test
-* Source: https://github.com/jucimarjr/html5games/tree/master/cocos2d/mapteste
-* License: https://github.com/jucimarjr/html5games/blob/master/LICENSE
-
-# Cocos2d HTML5 License
-* Name: Cocos2d HTML5
-* Source: https://github.com/cocos2d/cocos2d-html5
-* License: https://github.com/cocos2d/cocos2d-html5/blob/Cocos2d-html5-v2.2.3/licenses/LICENSE_cocos2d-html5.txt
-
-# Cocos2d-x License
-* Name: Cocos2d-x
-* Source: https://github.com/cocos2d/cocos2d-x
-* License: https://github.com/cocos2d/cocos2d-html5/blob/Cocos2d-html5-v2.2.3/licenses/LICENSE_cocos2d-x.txt
-
-# ZLib.js License
-* Name: ZLib.js
-* Source: https://github.com/imaya/zlib.js
-* License: 
-
-> The MIT License
-> 
-> Copyright (c) 2012 imaya
-> 
-=======
 
 # Map Test License
 * Name: Map Test
@@ -92,24 +60,16 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 >
 > Copyright (c) 2012 imaya
 >
->>>>>>> 3b0842727ad891a53b7ee7360b72caa850f221a5
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
 > in the Software without restriction, including without limitation the rights
 > to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 > copies of the Software, and to permit persons to whom the Software is
 > furnished to do so, subject to the following conditions:
-<<<<<<< HEAD
-> 
-> The above copyright notice and this permission notice shall be included in
-> all copies or substantial portions of the Software.
-> 
-=======
 >
 > The above copyright notice and this permission notice shall be included in
 > all copies or substantial portions of the Software.
 >
->>>>>>> 3b0842727ad891a53b7ee7360b72caa850f221a5
 > THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 > IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 > FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -118,15 +78,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
 
-<<<<<<< HEAD
-# ZLib License
-* Name: Zlib
-* Source: http://www.zlib.net/
-* License: http://opensource.org/licenses/zlib-license.php
-=======
 
 # ZLib License
 * Name: Zlib
 * Source: <http://www.zlib.net/>
 * License: <http://opensource.org/licenses/zlib-license.php>
->>>>>>> 3b0842727ad891a53b7ee7360b72caa850f221a5
