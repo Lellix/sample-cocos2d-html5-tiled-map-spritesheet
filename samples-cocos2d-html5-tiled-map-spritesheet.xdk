@@ -115,7 +115,7 @@
          "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
-         "appAuthor_": "Intel XDK",
+         "appAuthor_": "Intel XDK"
       },
       "Windows8": {
         "platform_": "windows8",
@@ -140,7 +140,7 @@
          "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
-         "appAuthor_": "Intel XDK",
+         "appAuthor_": "Intel XDK"
       },
       "WebApp": {
         "platform_": "webapp",
