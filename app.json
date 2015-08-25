@@ -12,6 +12,5 @@
     "abbr": "TiledMap sprite",
     "relname": "4.0.0",
     "apppreview": true,
-    "landscape": true,
   	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
