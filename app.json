@@ -5,7 +5,7 @@
     "description": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
     "articleUrl": "",
     "keywords": ["Game", "Cocos2d"],
-    "visible": false,
+    "visible": true,
     "type": "",
     "highlights": ["Tiled Map", "Cocos2d", "Game"],
     "appname": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
