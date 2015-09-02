@@ -1,19 +1,26 @@
 {
     "project": {
-        "projectSettingsVersion": "1.2",
+        "projectSettingsVersion": "2.0.0",
         "creationData": {
-            "type": "Blank Project",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "",
+            "src": "jsapp/sample-cocos2d-html5-tiled-map-spritesheet/sample.zip",
             "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1429818145851,
-            "creationDate": 1416213004594
+            "lastModifiedDate": 1440309994916,
+            "creationDate": 1440309932969
         },
         "XDK-app-designer": "false",
         "sourceDirectory": "www",
         "startFile": "index.html",
         "projectFiles": {},
-        "projectDirectories": {},
+        "projectDirectories": {
+            "www/xdk": {
+                "settings": {
+                    "project": {
+                        "XDK-generated": "true"
+                    }
+                }
+            }
+        },
         "libraries": [],
         "serviceMethods": [],
         "cordovaPluginsDirectory": "plugins",
@@ -42,16 +49,30 @@
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": []
+                "dependedBy": [],
+                "originType": "cordova.io",
+                "origin": "cordova-plugin-device",
+                "permissions": {},
+                "topLevel": true,
+                "gitref": "",
+                "name": "Device",
+                "description": "Cordova Device Plugin"
             },
             {
-                "id": "org.apache.cordova.splashscreen",
+                "id": "cordova-plugin-splashscreen",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": []
+                "dependedBy": [],
+                "originType": "cordova.io",
+                "origin": "cordova-plugin-splashscreen",
+                "permissions": {},
+                "topLevel": true,
+                "gitref": "",
+                "name": "Splashscreen",
+                "description": "Cordova Splashscreen Plugin"
             }
         ],
         "buildConfigurations": {
@@ -67,18 +88,20 @@
                     "Fullscreen": true
                 },
                 "isActive_": true,
-                "appName_": "Map Test",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -98,18 +121,20 @@
                     "Fullscreen": true
                 },
                 "isActive_": true,
-                "appName_": "Map Test",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -128,13 +153,16 @@
                     "Fullscreen": true
                 },
                 "isActive_": true,
-                "appName_": "Map Test",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -157,18 +185,20 @@
                     "Fullscreen": true
                 },
                 "isActive_": true,
-                "appName_": "Map Test",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.0.1",
@@ -181,13 +211,16 @@
                 "name_": "WebApp",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "samples-cocos2d-html5-tiled-map-spritesheet",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -201,13 +234,16 @@
                 "name_": "Firefox",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "samples-cocos2d-html5-tiled-map-spritesheet",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -221,13 +257,16 @@
                 "name_": "Chrome",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "samples-cocos2d-html5-tiled-map-spritesheet",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -241,19 +280,46 @@
                 "name_": "Facebook",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "samples-cocos2d-html5-tiled-map-spritesheet",
+                "appName_": "Cocos2D-Tiledmap",
                 "appID_": "not.yet.specified",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appAuthor_": "Intel XDK",
                 "appVersion_": "0.0.1"
+            },
+            "WP81": {
+                "platform_": "wp81",
+                "runtime_": "Cordova 3.x",
+                "name_": "WP81",
+                "preferences_": {},
+                "isActive_": true,
+                "appName_": "Cocos2D-Tiledmap",
+                "appID_": "not.yet.specified",
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appVersion_": "0.0.0.1",
+                "cordovaCLIVersion_": "?",
+                "appAuthor_": "Intel XDK"
             }
         },
         "gameAssetDirectory": "asset",
@@ -263,6 +329,7 @@
         },
         "projectTags": [
             "XDK-game-app"
-        ]
+        ],
+        "testDirectory": "test"
     }
 }
