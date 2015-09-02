@@ -6,6 +6,7 @@
     "articleUrl": "",
     "keywords": ["Game", "Cocos2d"],
     "visible": true,
+   "landscape" : true,
     "type": "",
     "highlights": ["Tiled Map", "Cocos2d", "Game"],
     "appname": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
