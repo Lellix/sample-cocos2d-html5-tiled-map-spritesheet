@@ -41,7 +41,7 @@
                 "description": "Cordova StatusBar Plugin",
                 "data": {},
                 "dependedBy": []
-             },
+            },
             {
                 "id": "cordova-plugin-device",
                 "version": "?",
@@ -76,13 +76,13 @@
             }
         ],
         "buildConfigurations": {
-            "Android-Crosswalk": {
+            "Android": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
                 "name_": "Android-Crosswalk",
                 "preferences_": {
                     "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
+                    "android-targetSdkVersion": "23",
                     "android-installLocation": "auto",
                     "Orientation": "landscape",
                     "Fullscreen": true
@@ -93,41 +93,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.1",
-                "appDescription_": "A game sample built using Cocos2d-html5 that teaches developer to use Tiled Map.",
-                "appAuthor_": "Intel XDK",
-                "appVersionCode_": "1"
-            },
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto",
-                    "Orientation": "landscape",
-                    "Fullscreen": true
-                },
-                "isActive_": true,
-                "appName_": "Cocos2D-Tiledmap",
-                "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -149,7 +115,7 @@
                 "runtime_": "Cordova 3.x",
                 "name_": "iOS",
                 "preferences_": {
-                    "ios-target": "6",
+                    "ios-target": "8.0",
                     "ios-configuration": "adhoc",
                     "Orientation": "landscape",
                     "Fullscreen": true
@@ -160,7 +126,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -193,7 +159,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -220,7 +186,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -244,7 +210,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -268,7 +234,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -292,7 +258,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
@@ -316,7 +282,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
                     ],
                     "intents": [],
