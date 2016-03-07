@@ -91,7 +91,7 @@
                 "appName_": "Cocos2D-Tiledmap",
                 "appID_": "demo.Cocos2dHtml5TiledMapSpritesheetSample",
                 "appAccess_": {
-                    "mode": "legacy",
+                    "mode": "whitelist",
                     "network": [
                         "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
